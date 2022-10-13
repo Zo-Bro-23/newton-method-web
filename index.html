@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Newton Method</title>
+</head>
+
+<body>
+    <div class="w3-card-4">
+        <div class="w3-container w3-green">
+            <h2 style="text-align: center;">Newton's Method</h2>
+        </div>
+        <br>
+        <form class="w3-container" style="text-align: center; margin-left: 25%; margin-right: 25%;">
+            <label>Enter function:</label>
+            <br>
+            <input id="text" class="w3-input" width="25%"></textarea>
+            <br>
+        </form>
+        <form class="w3-container" style="text-align: center; margin-left: 25%; margin-right: 25%;">
+            <label>Enter initial value:</label>
+            <br>
+            <input id="initial" class="w3-input" width="25%"></textarea>
+            <br>
+            <button id="button" type="button" class="w3-btn w3-padding w3-blue" style="width:120px">Run
+                &nbsp;></button>
+            <button id="cleartext" type="button" class="w3-btn w3-padding w3-teal" style="width: 120px">Clear
+                text</button>
+        </form>
+    </div>
+    <div class="w3-card-4" style="text-align: center;">
+        <h3 id="result"></h3>
+    </div>
+    <div class="w3-card-4" style="text-align: center;">
+        <h3>Some examples for how you can enter functions:</h3>
+        <dl>
+            <dt>x^2</dt>
+            <dt>2sin(x)</dt>
+            <dt>log(10000, sqrt(100))</dt>
+            <dt>See <a href="https://mathjs.org/docs/expressions/syntax.html">here</a> for more</dt>
+        </dl>
+    </div>
+    <div class="w3-card-4" style="text-align: center;">
+        <h3>There are several limitations to the Newton's Method, and these are reflected in this program too:</h3>
+        <dl>
+            <dt>Stops working with the iteration when f'(x) = 0 - This is why some initial values output NaN (not a
+                number)</dt>
+            <dt>Doesn't work if a function doesn't have a root - Some functions output random values, or even something
+                like Infinity</dt>
+            <dt>See <a
+                    href="https://en.wikipedia.org/wiki/Newton%27s_method#Failure_of_the_method_to_converge_to_the_root">here</a>
+                for more</dt>
+        </dl>
+    </div>
+</body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="bundle.js"></script>
+
+</html>
