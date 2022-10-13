@@ -12,7 +12,7 @@ document.getElementById('button').onclick = () => {
         iterations = document.getElementById('iterations').value
     }
     if (isNaN(document.getElementById('initial').value !== 'number') || !document.getElementById('initial').value) {
-        initial = 25
+        initial = 0
     } else {
         initial = document.getElementById('initial').value
     }
